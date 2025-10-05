@@ -6,28 +6,13 @@
     <title>Nexus</title>
 
     <!-- bs-cdn  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
     <!-- js-cdn -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
     <!-- fd-link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <!-- external css -->
     <link rel="stylesheet" href="./style.css" />
@@ -36,57 +21,22 @@
     <!-- navbar section start -->
 
     <nav class="navbar navbar-expand-lg mt-4">
-      <div class="container rounded-pill px-lg-4 py-lg-1 container-nav">
+      <div class="container rounded-pill px-lg-4 py-lg-1 container-nav-index">
         <a class="navbar-brand" href="#">
-          <img
-            src="./images/logo_nobg.png"
-            alt="Nexus"
-            width="35"
-            height="35"
-          />
+          <img src="./images/logo_nobg.png" alt="Nexus" width="35" height="35">
         </a>
         <a class="navbar-brand" href="#">Nexus</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Companies</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#jobs">Jobs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Companies">Companies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
-          <!-- <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item setting-hid">
-              <div class="my-lg-2">
-                <button type="button" class="btn border-0" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                  <i class="fa-solid fa-ellipsis-vertical fs-4"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-lg-end">
-                  <li><a href="./index.html" class="text-decoration-none"><button class="dropdown-item" type="button">Sign-in</button></a></li>
-                  <li><a href="./index.html" class="text-decoration-none"><button class="dropdown-item" type="button">Setting</button></a></li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">About</a>
-                    <a class="nav-link ms-2 text-black" aria-current="page" data-bs-toggle="offcanvas" href="#offcanvasabout" role="button" aria-controls="offcanvasExample">
-                      About
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link ms-2 text-black" aria-current="page" data-bs-toggle="offcanvas" href="#offcanvashelp" role="button" aria-controls="offcanvasExample">Help</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul> -->
         </div>
       </div>
     </nav>
@@ -95,19 +45,412 @@
 
     <!-- center cotainer start -->
 
-    <div class="container text-center mt-5">
+    <div class="container text-center mt-5 mb-lg-5">
       <div class="row">
-        <div class="col">
+        <div class="col-lg-6 col-12">
           <div class="container d-flex justify-content-center align-items-center flex-column mt-5">
             <img src="./images/logo_nobg.png" alt="Nexus" class="w-25 h-25">
             <h1 class="mt-2 text-light">Nexus</h1>
-            <h1 class="mt-2 text-info-emphasis display-4">Discover Your Next Opportunity</h1>
+            <h1 class="mt-2 text-info display-4">Discover Your Next Opportunity</h1>
           </div>
         </div>
-        <div class="col">2 of 2</div>
+        <div class="col-lg-6 col-12">
+          <section class="text-center p-5 mt-5 text-light">
+            <h3 class="display-4">Welcome to Nexus</h3>
+            <h4 class="lead">"Your career journey starts here. Find the right job, today."</h4>
+            <a href="#" class="btn btn-outline-info btn-lg mt-3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Get Started</a>
+          </section>
+          <div class="search-bar mt-3">
+            <form class="form-inline d-lg-flex justify-content-center">
+              <input type="text" class="form-control w-lg-50 m-lg-2 mb-lg-2 m-2" placeholder="Job title, company or keywords">
+              <input type="text" class="form-control w-lg-50 m-lg-2 m-2" placeholder="Location">
+              <button type="submit" class="btn btn-info m-lg-2 w-100 m-2">Search Jobs</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- center container end -->
+
+    <!-- description section start -->
+
+    <div class="container text-center p-5" id="jobs">
+      <h1 class="mt-lg-5 text-light mb-5">Explore Job Categories</h1>
+      <div class="row">
+        <div class="col-lg-3 col-12 mb-3">
+          <div class="container-fluid category-card p-3 rounded-5">
+            <i class="fas fa-laptop-code fa-2x mb-3 text-info"></i>
+            <h4>IT & Software</h4>
+            <p>Build the future with coding, development, and software innovation.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12 mb-3">
+          <div class="container-fluid category-card p-3 rounded-5">
+            <i class="fas fa-paint-brush fa-2x mb-3 text-info"></i>
+            <h4>Design</h4>
+            <p>Turn creativity into reality with UI/UX, graphics, and visual design.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12 mb-3">
+          <div class="container-fluid category-card p-3 rounded-5">
+            <i class="fas fa-bullhorn fa-2x mb-3 text-info"></i>
+            <h4>Marketing</h4>
+            <p>Promote brands, reach customers, and create business impact.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12 mb-3">
+          <div class="container-fluid category-card p-3 rounded-5">
+            <i class="fas fa-chart-line fa-2x mb-3 text-info"></i>
+            <h4>Finance</h4>
+            <p>Drive growth through accounting, investment, and risk management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- description section end-->
+
+    <!-- company section start -->
+
+    <div class="container text-center p-5 company mb-lg-5" id="Companies">
+      <h2 class="mb-4 text-light">Featured Companies</h2>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <i class="fab fa-google fa-3x m-3 text-info"></i>
+              <i class="fab fa-amazon fa-3x m-3 text-info"></i>
+              <i class="fab fa-microsoft fa-3x m-3 text-info"></i>
+              <i class="fab fa-linkedin fa-3x m-3 text-info"></i>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <i class="fab fa-facebook fa-3x m-3 text-info"></i>
+              <i class="fab fa-twitter fa-3x m-3 text-info"></i>
+              <i class="fab fa-apple fa-3x m-3 text-info"></i>
+              <i class="fa-brands fa-discord fa-3x m-3 text-info"></i>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <i class="fab fa-php fa-3x m-3 text-info"></i>
+              <i class="fab fa-python fa-3x m-3 text-info"></i>
+              <i class="fab fa-android fa-3x m-3 text-info"></i>
+              <i class="fab fa-aws fa-3x m-3 text-info"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- company section end -->
+
+    <!-- review section start -->
+    
+    <div class="container mb-4 mt-lg-5">
+      <h2 class="text-center text-light mb-5">What People Say</h2>
+      <div class="row">
+        <div class="col-lg-4 col-12 mb-4">
+          <div class="container-fluid category-card p-5 rounded-5">
+            <p>"The ability to see detailed case studies and technical breakdown
+               gives me confidence in the candidate's actual abilities before even scheduling an interview."</p>
+            <small>- Ramesh, Senior Manager</small>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 mb-4">
+          <div class="container-fluid category-card p-5 rounded-5">
+            <p>"We hired our top two developers this quarter directly from this site.
+               The structured project view and clear communication tools are a game-changer for technical hiring.
+            "</p>
+            <small>- Priya, HR Manager</small>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 mb-4">
+          <div class="container-fluid category-card p-5 rounded-5">
+            <p>"As a recruiter, finding candidates with verifiable skills is key. 
+              This platform is brilliant—it immediately filters out noise, giving us high-quality, 
+              project-based portfolios."</p>
+            <small>- Alex, Designer</small>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <!-- review section end -->
+
+    <!-- get start section -->
+
+    <div class="container text-center text-light mt-lg-5 mb-5">
+      <h2>Ready to Take the Next Step?</h2>
+      <p>Join Nexus today and unlock endless opportunities.</p>
+      <button class="btn btn-outline-info m-2" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Get Started</button>
+    </div>
+
+    <!-- get section end -->
+
+    <!-- footer section start -->
+
+    <footer class="p-3 text-center" id="contact">
+      <p class="mt-2">&copy; 2025 Nexus Job Portal. All Rights Reserved.</p>
+      <p>
+        <i class="fab fa-facebook-f mx-2"></i>
+        <i class="fab fa-twitter mx-2"></i>
+        <i class="fab fa-linkedin-in mx-2"></i>
+      </p>
+    </footer>
+
+    <!-- footer section end -->
+
+    <!-- modal sign-in / register start -->
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content modal-bg">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-light" id="exampleModalToggleLabel">Nexus</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active text-info" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Jobseeker</button>
+                <button class="nav-link text-info" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Employer</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <div class="rounded-4 shadow-lg">
+                    <div class="row p-lg-5 d-flex justify-content-center">
+                      <div class="col-12 py-3">
+                        <div class="m-3">
+                          <h1 class="text-center text-light fw-bold">Login</h1>
+                        </div>
+                        <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                          <input type="email" class="form-control rounded-pill" id="floatingInput" placeholder="Username" required>
+                          <label for="floatingInput"><i class="fa-regular fa-user"></i> Username</label>
+                        </div>
+                        <div class="form-floating w-75 ms-auto me-auto">
+                          <input type="password" class="form-control rounded-pill" id="floatingPassword" placeholder="Password" required>
+                          <label for="floatingPassword"><i class="fa-solid fa-lock"></i> Password</label>
+                        </div>
+                        <div>
+                        <div class="form-check d-flex justify-content-between w-75 mt-3 ms-auto me-auto">
+                          <div class="ps-3">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label text-light" for="checkDefault">
+                              Remember me
+                            </label>
+                          </div>
+                          <a href="#" class="pe-3 text-decoration-none text-light">Forgot password?</a>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center mt-4">
+                        <a href="./jobseeker_profile.html" class="btn btn-info p-2 w-50 rounded-pill">Login</a>
+                      </div>
+                      <div class="text-center mt-2">
+                        <p class="text-light">Don't have an account? <a href="#" class="text-decoration-none text-light" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Register</a></p>
+                      </div>
+                      <div class="text-center">
+                        <p class="text-light mb-0">or login with</p>
+                        <a class="me-2 fs-5 text-light" href="#"><i class="fa-brands fa-google"></i></a>
+                        <a class="fs-5 text-light" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="ms-2 fs-5 text-light" href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div class="rounded-4 shadow-lg">
+                    <div class="row p-lg-5 d-flex justify-content-center">
+                      <div class="col-12 py-3">
+                        <div class="m-3">
+                          <h1 class="text-center text-light fw-bold">Login</h1>
+                        </div>
+                        <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                          <input type="email" class="form-control rounded-pill" id="floatingInput" placeholder="Username" required>
+                          <label for="floatingInput"><i class="fa-regular fa-user"></i> Username</label>
+                        </div>
+                        <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                          <input type="text" class="form-control rounded-pill" id="floatingInput" placeholder="Company Id" required>
+                          <label for="floatingInput"><i class="fa-regular fa-id-badge"></i> Company Id</label>
+                        </div>
+                        <div class="form-floating w-75 ms-auto me-auto">
+                          <input type="password" class="form-control rounded-pill" id="floatingPassword" placeholder="Password" required>
+                          <label for="floatingPassword"><i class="fa-solid fa-lock"></i> Password</label>
+                        </div>
+                        <div>
+                        <div class="form-check d-flex justify-content-between w-75 mt-3 ms-auto me-auto">
+                          <div class="ps-3 text-light">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label" for="checkDefault">
+                              Remember me
+                            </label>
+                          </div>
+                          <a href="#" class="pe-3 text-decoration-none text-light">Forgot password?</a>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center mt-4">
+                        <a href="./employer_profile.html" class="btn btn-info w-50 rounded-pill p-2">Login</a>
+                      </div>
+                      <div class="text-center mt-2">
+                        <p class="text-light">Don't have an account? <a href="#" class="text-decoration-none text-light" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Register</a></p>
+                      </div>
+                      <div class="text-center">
+                        <p class="text-light mb-0">or login with</p>
+                        <a class="me-2 fs-5 text-light" href="#"><i class="fa-brands fa-google"></i></a>
+                        <a class="fs-5 text-light" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="ms-2 fs-5 text-light" href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content modal-bg">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-light" id="exampleModalToggleLabel">Nexus</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active text-info" id="nav-jobseeker-tab" data-bs-toggle="tab" data-bs-target="#nav-jobseeker" type="button" role="tab" aria-controls="nav-jobseeker" aria-selected="true">Jobseeker</button>
+                <button class="nav-link text-info" id="nav-employer-tab" data-bs-toggle="tab" data-bs-target="#nav-employer" type="button" role="tab" aria-controls="nav-employer" aria-selected="false">Employer</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-jobseeker" role="tabpanel" aria-labelledby="nav-jobseeker-tab" tabindex="0">
+                <div class="rounded-4 shadow-lg">
+                  <div class="row p-lg-5 d-flex justify-content-center">
+                    <div class="col-12 py-3">
+                      <div class="m-3">
+                        <h1 class="text-center text-light fw-bold">Register</h1>
+                      </div>
+                      <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                        <input type="email" class="form-control rounded-pill" id="floatingInput" placeholder="Username" required>
+                        <label for="floatingInput"><i class="fa-regular fa-user"></i> Username</label>
+                      </div>
+                      <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                        <input type="email" class="form-control rounded-pill" id="floatingemail" placeholder="name@example.com" required>
+                        <label for="floatingemail"><i class="fa-regular fa-envelope"></i> Email address</label>
+                      </div>
+                      <div class="form-floating w-75 ms-auto me-auto mb-3">
+                        <input type="password" class="form-control rounded-pill" id="floatingPassword" placeholder="Password" required>
+                        <label for="floatingPassword"><i class="fa-solid fa-lock"></i> Password</label>
+                      </div>
+                      <div class="form-floating w-75 ms-auto me-auto mb-3">
+                        <input type="password" class="form-control rounded-pill" id="floatingPassword" placeholder="Password" required>
+                        <label for="floatingPassword"><i class="fa-solid fa-lock"></i> Re-Password</label>
+                      </div>
+                      <div class="form-floating w-75 ms-auto me-auto mb-3">
+                        <input type="text" class="form-control rounded-pill" id="floatingskills" placeholder="skills">
+                        <label for="floatingskills"><i class="fa-solid fa-user-pen"></i> Skills</label>
+                      </div>
+                      <div class="form-group w-75 ms-auto me-auto mb-3">
+                        <select class="form-control rounded-pill p-3" name="role" id="role">
+                          <option value="" selected>Preferred job role</option>
+                          <option value="">Developer</option>
+                          <option value="">Designer</option>
+                          <option value="">Finance</option>
+                          <option value="">Marketing</option>
+                        </select>
+                      </div>
+                      <div class="form-floating w-75 ms-auto me-auto mb-3">
+                        <input type="text" class="form-control rounded-pill" id="floatinglocation" placeholder="Preferred location">
+                        <label for="floatinglocation"><i class="fa-solid fa-location-dot"></i> Location</label>
+                      </div>
+                      <div class="d-flex justify-content-center mt-4">
+                        <a href="./jobseeker_profile.html" class="btn btn-info w-75 rounded-pill p-2">Register</a>
+                      </div>
+                      <div class="text-center mt-2">
+                        <p class="text-light mb-0">or login with</p>
+                        <a class="me-2 fs-5 text-light" href="#"><i class="fa-brands fa-google"></i></a>
+                        <a class="fs-5 text-light" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="ms-2 fs-5 text-light" href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-employer" role="tabpanel" aria-labelledby="nav-employer-tab" tabindex="0">
+                <div class="rounded-4 shadow-lg">
+                  <div class="row p-lg-5 d-flex justify-content-center">
+                    <div class="col-12 py-3">
+                      <div class="m-3">
+                        <h1 class="text-center text-light fw-bold">Register</h1>
+                      </div>
+                      <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                        <input type="email" class="form-control rounded-pill" id="floatingInput" placeholder="Username" required>
+                        <label for="floatingInput"><i class="fa-regular fa-user"></i> Username</label>
+                      </div>
+                      <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                        <input type="email" class="form-control rounded-pill" id="floatingemail" placeholder="name@example.com" required>
+                        <label for="floatingemail"><i class="fa-regular fa-envelope"></i> Email address</label>
+                      </div>
+                      <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                        <input type="text" class="form-control rounded-pill" id="floatingInput" placeholder="Company name" required>
+                        <label for="floatingInput"><i class="fa-regular fa-building"></i> Company name</label>
+                      </div>
+                      <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                        <input type="text" class="form-control rounded-pill" id="floatingInput" placeholder="Company Id" required>
+                        <label for="floatingInput"><i class="fa-regular fa-id-badge"></i> Company Id</label>
+                      </div>
+                      <div class="form-floating w-75 ms-auto me-auto mb-3">
+                        <input type="password" class="form-control rounded-pill" id="floatingPassword" placeholder="Password" required>
+                        <label for="floatingPassword"><i class="fa-solid fa-lock"></i> Password</label>
+                      </div>
+                      <div class="form-floating w-75 ms-auto me-auto">
+                        <input type="password" class="form-control rounded-pill" id="floatingPassword" placeholder="Password" required>
+                        <label for="floatingPassword"><i class="fa-solid fa-lock"></i> Re-Password</label>
+                      </div>
+                      <div class="d-flex justify-content-center mt-4">
+                        <a href="./employer_profile.html" class="btn btn-info w-75 rounded-pill p-2">Register</a>
+                      </div>
+                      <div class="text-center mt-2">
+                        <p class="text-light mb-0">or login with</p>
+                        <a class="me-2 fs-5 text-light" href="#"><i class="fa-brands fa-google"></i></a>
+                        <a class="fs-5 text-light" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="ms-2 fs-5 text-light" href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal section end -->
+
+    <!-- offcanvas start -->
+
+    <div class="offcanvas offcanvas-top text-bg-dark" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-secondary" id="offcanvasTopLabel">About</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-secondary">
+        “This Job Portal is my individual project developed using HTML, CSS, and Bootstrap.
+         The platform is designed to connect job seekers with employers in a simple and effective way. 
+         It features separate sections for job seekers and employers, profile management, job postings, and 
+         application tracking. The main goal of this project is to practice full-stack concepts 
+         while building a real-world inspired web application.”
+      </div>
+    </div>
+
+    <!-- offcanvas end -->
+
   </body>
 </html>

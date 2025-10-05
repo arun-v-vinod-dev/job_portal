@@ -1,0 +1,698 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus</title>
+
+    <!-- bs-cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <!-- js-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- fd-link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+<body class="em-body">
+    
+    <!-- navbar section start -->
+
+    <nav class="navbar navbar-expand-lg p-0 m-0 sticky-top">
+      <div class="container-fluid px-lg-4 py-lg-2 container-nav-employer">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo_nobg.png" alt="Nexus" width="35" height="35">
+        </a>
+        <a class="navbar-brand" href="#">Nexus</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#jobs">Jobs</a></li> -->
+            <!-- <li class="nav-item"><a class="nav-link" href="#Companies">Companies</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar section end -->
+
+    <!-- main content start -->
+
+    <div class="container-fluid text-center">
+    <div class="row p-3 ps-0">
+        <div class="col-lg-3 col-12">
+
+            <div class="row">
+                <div class="col p-3">
+                    <div class="container text-center border border-secondary rounded-4 contanier-em-bg m-3 my-0">
+                        <div class="p-3">
+                            <img src="./images/profile.jpg" alt="No-image" class="rounded-circle profile-size">
+                        </div>
+                        <h3 class="text-light">John Doe</h3>
+                        <p class="text-light">Senior Manager, Nexus</p>
+                        <button class="btn btn-outline-info w-50 mb-4">Edit Profile</button>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="container text-start border border-secondary rounded-4 contanier-em-bg mx-3 my-1 p-0">
+                        <div class="pc-page">
+                            <p class="fs-5 p-3 ps-5 border-bottom border-secondary"><a href="#" class="text-decoration-none text-light">Account Setting</a></p>
+                        </div>
+                        <div class="mob-page">
+                            <p class="fs-5 p-3 ps-5 border-bottom border-secondary"><a href="#" class="text-decoration-none text-light" data-bs-toggle="modal" data-bs-target="#account-setting-modal">Account Setting</a></p>
+                        </div>
+                        <div>
+                            <p class="fs-5 text-light p-3 ps-5 border-bottom border-secondary pt-0"><a href="#" class="text-decoration-none text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Post a job</a></p>
+                        </div>
+                        <div>
+                            <p class="fs-5 text-light p-3 ps-5 border-bottom border-secondary pt-0"><a href="#" class="text-decoration-none text-light" data-bs-toggle="modal" data-bs-target="#job-list-modal">Job list</a></p>
+                        </div>
+                        <div>
+                            <p class="fs-5 text-light p-3 ps-5 border-bottom border-secondary pt-0"><a href="#" class="text-decoration-none text-light" data-bs-toggle="modal" data-bs-target="#applicant-list-modal">Applicants</a></p>
+                        </div>
+                        <div>
+                            <p class="fs-5 text-light p-3 ps-5 pt-0 border-bottom border-secondary" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="No notification yet">Notification</p>
+                        </div>
+                        <div>
+                            <p class="fs-5 text-light ps-5 pt-0"><a href="#" class="text-decoration-none text-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight-message" aria-controls="offcanvasRight-message">Message</a></p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-lg-8 col-12 pc-page">
+
+            <div class="container-fluid contanier-em-bg text-light border border-secondary mt-lg-3 mx-3 text-start rounded-2 p-4">
+                <h5 class="border-start border-3 border-info ps-2">Account Detail</h5>
+                <div class="d-flex flex-column mt-3">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Username</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Company name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Company name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Company details</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Designation</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Designation">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Company Id</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Company Id" aria-label="Company Id" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-light" type="button" id="button-addon2">verify</button>
+                        </div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <div class="col-6 px-2">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-6 px-2">
+                            <label for="inputState" class="form-label">State</label>
+                            <input type="text" class="form-control" id="inputState">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Mobile No</label>
+                        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Mobile No">
+                    </div>
+                    <div class="mb-3 mx-2 mt-4">
+                        <button class="btn btn-outline-info">Save changes</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+    });
+  </script>
+
+    <!-- main content end -->
+
+    <!-- footer section start -->
+
+    <footer class="p-3 text-center mt-5 em-footer" id="contact">
+      <p class="mt-2">&copy; 2025 Nexus Job Portal. All Rights Reserved.</p>
+      <p>
+        <i class="fab fa-facebook-f mx-2"></i>
+        <i class="fab fa-twitter mx-2"></i>
+        <i class="fab fa-linkedin-in mx-2"></i>
+      </p>
+    </footer>
+
+    <!-- footer section end -->
+
+    <!-- modal post-job section start -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-bg">
+            <div class="modal-header">
+                <h1 class="modal-title text-light fs-5" id="exampleModalLabel">Nexus</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-lg-4">
+                <div class="container-fluid text-light border border-secondary text-start rounded-2 p-4">
+                    <h5 class="border-start border-3 border-info ps-2">Add New Job</h5>
+                        <div class="d-flex flex-column mt-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Job Title</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g. Frontend Developer" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Job Description</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write job responsibilities..." required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Required Skills</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g. HTML, CSS, JavaScript" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Salary</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g. $3000/month" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Location</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g. Remote / Kochi" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Experience</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g. Freshers" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Time Period</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g. 2025-08-34 to 30-08-2025" required>
+                            </div>
+                        <div class="mb-3 mx-2 mt-4 d-flex justify-content-center">
+                            <button class="btn btn-info rounded-4 w-50 p-2">Post Job</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal post-job section end -->
+
+    <!-- modal post-list section start -->
+
+    <div class="modal fade" id="job-list-modal" tabindex="-1" aria-labelledby="job-list-modal" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content modal-bg">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5 text-light" id="job-list-modal">Nexus</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container p-lg-5 job-container">
+                <h5 class="border-start border-3 border-info ps-2 text-light">Add New Job</h5>
+                <div class="mt-4 d-flex justify-content-between align-items-center">
+                    <div class="input-group w-50">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control p-2" placeholder="Search jobs by title..." aria-label="Search" aria-describedby="basic-addon1">
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div class="d-flex justify-content-between w-25">
+                        <div>
+                            <select class="rounded p-2 filter-mob">
+                                <option>Filter by Type</option>
+                                <option>Full-time</option>
+                                <option>Part-time</option>
+                                <option>Internship</option>
+                                <option>Contract</option>
+                                <option>Open</option>
+                                <option>Closed</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-success rounded-3 filter-mob">⬇ Export Jobs</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container p-3">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                        <!-- <th><input type="checkbox"></th> -->
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Type</th>
+                            <th>Experience</th>
+                            <th>Location</th>
+                            <th>Posted On</th>
+                            <th>Deadline</th>
+                            <th>Status</th>
+                            <th>Applicants</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td data-label="Title">Frontend Developer</td>
+                        <td data-label="Category">IT & Software</td>
+                        <td data-label="Type">Full-time</td>
+                        <td data-label="Experience">2+ years</td>
+                        <td data-label="Location" class="table-mob">Remote</td>
+                        <td data-label="Posted On" class="table-mob">2025-09-15</td>
+                        <td data-label="Deadline" class="table-mob">2025-10-20</td>
+                        <td class="text-success" data-label="Status">Open</td>
+                        <td data-label="Applicants">12</td>
+                        <td data-label="Actions">
+                            <div>
+                                <button class="btn bg-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                                <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Title">Backend Developer</td>
+                        <td data-label="Category">IT & Software</td>
+                        <td data-label="Type">Internship</td>
+                        <td data-label="Experience">Fresher</td>
+                        <td data-label="Location" class="table-mob">Bangalore</td>
+                        <td data-label="Posted On" class="table-mob">2025-09-20</td>
+                        <td data-label="Deadline" class="table-mob">2025-11-05</td>
+                        <td class="text-success" data-label="Status">Open</td>
+                        <td data-label="Applicants">8</td>
+                        <td data-label="Actions">
+                            <div>
+                                <button class="btn bg-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                                <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Title">UI/UX Designer</td>
+                        <td data-label="Category">Design</td>
+                        <td data-label="Type">Contract</td>
+                        <td data-label="Experience">1+ year</td>
+                        <td data-label="Location" class="table-mob">Delhi</td>
+                        <td data-label="Posted On" class="table-mob">2025-09-25</td>
+                        <td data-label="Deadline" class="table-mob">2025-10-15</td>
+                        <td class="text-danger" data-label="Status">Closed</td>
+                        <td data-label="Applicants">5</td>
+                        <td data-label="Actions">
+                            <div>
+                                <button class="btn bg-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                                <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Title">Customer Support</td>
+                        <td data-label="Category">Customer Service</td>
+                        <td data-label="Type">Part-time</td>
+                        <td data-label="Experience">Fresher</td>
+                        <td data-label="Location" class="table-mob">Remote</td>
+                        <td data-label="Posted On" class="table-mob">2025-09-12</td>
+                        <td data-label="Deadline" class="table-mob">2025-10-30</td>
+                        <td class="text-success" data-label="Status">Open</td>
+                        <td data-label="Applicants">5</td>
+                        <td data-label="Actions">
+                            <div>
+                                <button class="btn bg-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                                <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Title">HR Coordinator</td>
+                        <td data-label="Category">Human Resources</td>
+                        <td data-label="Type">Full-time</td>
+                        <td data-label="Experience">2 years</td>
+                        <td data-label="Location" class="table-mob">Delhi</td>
+                        <td data-label="Posted On" class="table-mob">2025-08-30</td>
+                        <td data-label="Deadline" class="table-mob">2025-10-02</td>
+                        <td class="text-danger" data-label="Status">Closed</td>
+                        <td data-label="Applicants">5</td>
+                        <td data-label="Actions">
+                            <div>
+                                <button class="btn bg-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                                <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Title">Backend Developer</td>
+                        <td data-label="Category">IT & Software</td>
+                        <td data-label="Type">Internship</td>
+                        <td data-label="Experience">Fresher</td>
+                        <td data-label="Location" class="table-mob">Bangalore</td>
+                        <td data-label="Posted On" class="table-mob">2025-09-20</td>
+                        <td data-label="Deadline" class="table-mob">2025-11-05</td>
+                        <td class="text-success" data-label="Status">Open</td>
+                        <td data-label="Applicants">8</td>
+                        <td data-label="Actions">
+                            <div>
+                                <button class="btn bg-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                                <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Title">UI/UX Designer</td>
+                        <td data-label="Category">Design</td>
+                        <td data-label="Type">Contract</td>
+                        <td data-label="Experience">1+ year</td>
+                        <td data-label="Location" class="table-mob">Delhi</td>
+                        <td data-label="Posted On" class="table-mob">2025-09-25</td>
+                        <td data-label="Deadline" class="table-mob">2025-10-15</td>
+                        <td class="text-danger" data-label="Status">Closed</td>
+                        <td data-label="Applicants">5</td>
+                        <td data-label="Actions">
+                            <div>
+                                <button class="btn bg-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                                <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <nav aria-label="page-navigation" class="d-flex justify-content-center">
+            <ul class="pagination mob-page">
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+                </li>
+                <li class="page-item active">
+                <a class="page-link" href="#" aria-current="page">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal post-list section end -->
+
+    <!-- modal applicant list start -->
+
+    <div class="modal fade" id="applicant-list-modal" tabindex="-1" aria-labelledby="applicant-list-modal" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content modal-bg">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5 text-light" id="applicant-list-modal">Nexus</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container p-lg-5 job-container">
+                <h5 class="border-start border-3 border-info ps-2 text-light">Applicants List</h5>
+                <div class="mt-4 d-flex justify-content-between align-items-center">
+                    <div class="input-group w-50">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control p-2" placeholder="Search jobs by title..." aria-label="Search" aria-describedby="basic-addon1">
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div class="d-flex justify-content-between w-25">
+                        <div>
+                            <select class="rounded p-2 filter-mob">
+                                <option>Filter by Type</option>
+                                <option>Skills</option>
+                                <option>Experience</option>
+                                <option>Job type</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-success rounded-3 filter-mob">⬇ Export sheet</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container p-3">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Applicant Name</th>
+                            <th>Email</th>
+                            <th>Job Applied For</th>
+                            <th>Experience</th>
+                            <th>Skills</th>
+                            <th>Resume</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td data-label="Applicant Name">John Doe</td>
+                        <td data-label="Email">john@example.com</td>
+                        <td data-label="Job Applied For">Frontend Developer</td>
+                        <td data-label="Experience">2 years</td>
+                        <td data-label="Skills">HTML, CSS, JS</td>
+                        <td data-label="Resume"><a href="#" class="btn btn-outline-success">View</a></td>
+                        <td data-label="Status" class="text-success">Shortlisted</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Applicant Name">Priya Sharma</td>
+                        <td data-label="Email">priya@gmail.com</td>
+                        <td data-label="Job Applied For">UI/UX Designer</td>
+                        <td data-label="Experience">1 year</td>
+                        <td data-label="Skills">Figma, Adobe XD</td>
+                        <td data-label="Resume"><a href="#" class="btn btn-outline-success">View</a></td>
+                        <td data-label="Status" class="text-warning">Under Review</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Applicant Name">Arjun Kumar</td>
+                        <td data-label="Email">arjun@gmail.com</td>
+                        <td data-label="Job Applied For">Backend Developer</td>
+                        <td data-label="Experience">3 years</td>
+                        <td data-label="Skills">Python, Django</td>
+                        <td data-label="Resume"><a href="#" class="btn btn-outline-success">View</a></td>
+                        <td data-label="Status" class="text-danger">Rejected</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Applicant Name">Sana Ali</td>
+                        <td data-label="Email">sanaali@gmail.com</td>
+                        <td data-label="Job Applied For">Data Analyst</td>
+                        <td data-label="Experience">Fresher</td>
+                        <td data-label="Skills">Excel, SQL, PowerBI</td>
+                        <td data-label="Resume"><a href="#" class="btn btn-outline-success">View</a></td>
+                        <td data-label="Status" class="text-success">Shortlisted</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Applicant Name">Ravi Nair</td>
+                        <td data-label="Email">ravi.nair@gmail.com</td>
+                        <td data-label="Job Applied For">Digital Marketer</td>
+                        <td data-label="Experience">2 years</td>
+                        <td data-label="Skills">SEO, Google Ads</td>
+                        <td data-label="Resume"><a href="#" class="btn btn-outline-success">View</a></td>
+                        <td data-label="Status" class="text-warning">Under Review</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <nav aria-label="page-navigation" class="d-flex justify-content-center">
+            <ul class="pagination mob-page">
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+                </li>
+                <li class="page-item active">
+                <a class="page-link" href="#" aria-current="page">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- modal applicant list end -->
+
+    <!-- offcanvas start -->
+
+    <div class="offcanvas offcanvas-top text-bg-dark" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-secondary" id="offcanvasTopLabel">About</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-secondary">
+        “This Job Portal is my individual project developed using HTML, CSS, and Bootstrap.
+         The platform is designed to connect job seekers with employers in a simple and effective way. 
+         It features separate sections for job seekers and employers, profile management, job postings, and 
+         application tracking. The main goal of this project is to practice full-stack concepts 
+         while building a real-world inspired web application.”
+      </div>
+    </div>
+
+    <!-- offcanvas end -->
+
+    <!-- account setting modal for mob start -->
+
+    <div class="modal fade" id="account-setting-modal" tabindex="-1" aria-labelledby="account-setting-modal" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content modal-bg">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5 text-light" id="account-setting-modal">Nexus</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid contanier-em-bg text-light border border-secondary mt-lg-3 mx-3 text-start rounded-2 p-4">
+                <h5 class="border-start border-3 border-info ps-2">Account Detail</h5>
+                <div class="d-flex flex-column mt-3">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Username</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Company name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Company name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Company details</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Designation</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Designation">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Company Id</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Company Id" aria-label="Company Id" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-light" type="button" id="button-addon2">verify</button>
+                        </div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <div class="col-6 px-2">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-6 px-2">
+                            <label for="inputState" class="form-label">State</label>
+                            <input type="text" class="form-control" id="inputState">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Mobile No</label>
+                        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Mobile No">
+                    </div>
+                    <div class="mb-3 mx-2 mt-4">
+                        <button class="btn btn-outline-info">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- account setting modal for mob end -->
+
+    <!-- msg offcanvas start -->
+
+    <div class="offcanvas offcanvas-end bg-dark text-secondary" tabindex="-1" id="offcanvasRight-message" aria-labelledby="offcanvasRightLabel-message">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white" id="offcanvasRightLabel-message">Nexus</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="container">
+            <div class="row border-bottom border-secondary mb-3">
+                <div class="col-11">
+                    <p class="text-white mb-0">Acme Tech Pvt Ltd</p>
+                    <p>Interview Invitation for Frontend Developer Role</p>
+                </div>
+                <div class="col-1">
+                    <span>Oct 2</span>
+                </div>
+            </div>
+
+            <div class="row border-bottom border-secondary mb-3">
+            <div class="col-11">
+                <p class="text-white mb-0">DataWorks Solutions</p>
+                <p>Your application is under review</p>
+            </div>
+            <div class="col-1">
+                <span>Sep 30</span>
+            </div>
+            </div>
+
+            <div class="row border-bottom border-secondary mb-3">
+            <div class="col-11">
+                <p class="text-white mb-0">Design Studio</p>
+                <p>Thank you for applying for UI/UX Designer</p>
+            </div>
+            <div class="col-1">
+                <span>Sep 28</span>
+            </div>
+            </div>
+
+            <div class="row border-bottom border-secondary mb-3">
+            <div class="col-11">
+                <p class="text-white mb-0">AI Vision Labs</p>
+                <p>Scheduled Interview Data Analyst Role</p>
+            </div>
+            <div class="col-1">
+                <span>Sep 25</span>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- msg offcavas end -->
+
+</body>
+</html>

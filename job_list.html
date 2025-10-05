@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus</title>
+
+    <!-- bs-cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <!-- js-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- fd-link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+<body class="bg-white">
+    
+    <div class="container p-lg-5 job-container">
+        <h5 class="border-start border-3 border-info ps-2">Add New Job</h5>
+        <div class="mt-4 d-flex justify-content-between align-items-center">
+            <div class="input-group w-50">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control p-2" placeholder="Search jobs by title..." aria-label="Search" aria-describedby="basic-addon1">
+            </div>
+            <div class="d-flex justify-content-between w-25">
+                <div>
+                    <select class="rounded p-2 filter-mob">
+                        <option>Filter by Type</option>
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                        <option>Internship</option>
+                        <option>Contract</option>
+                        <option>Open</option>
+                        <option>Closed</option>
+                    </select>
+                </div>
+                <button class="btn btn-outline-success rounded-3 filter-mob">⬇ Export Jobs</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-3">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                <!-- <th><input type="checkbox"></th> -->
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Type</th>
+                    <th>Experience</th>
+                    <th>Location</th>
+                    <th>Posted On</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                    <th>Applicants</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tr>
+                <td data-label="Title">Frontend Developer</td>
+                <td data-label="Category">IT & Software</td>
+                <td data-label="Type">Full-time</td>
+                <td data-label="Experience">2+ years</td>
+                <td data-label="Location" class="table-mob">Remote</td>
+                <td data-label="Posted On" class="table-mob">2025-09-15</td>
+                <td data-label="Deadline" class="table-mob">2025-10-20</td>
+                <td class="text-success" data-label="Status">Open</td>
+                <td data-label="Applicants">12</td>
+                <td data-label="Actions">
+                    <div>
+                        <button class="btn bg-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                        <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Delete</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Title">Backend Developer</td>
+                <td data-label="Category">IT & Software</td>
+                <td data-label="Type">Internship</td>
+                <td data-label="Experience">Fresher</td>
+                <td data-label="Location" class="table-mob">Bangalore</td>
+                <td data-label="Posted On" class="table-mob">2025-09-20</td>
+                <td data-label="Deadline" class="table-mob">2025-11-05</td>
+                <td class="text-success" data-label="Status">Open</td>
+                <td data-label="Applicants">8</td>
+                <td data-label="Actions">
+                    <div>
+                        <button class="btn bg-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                        <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Delete</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Title">UI/UX Designer</td>
+                <td data-label="Category">Design</td>
+                <td data-label="Type">Contract</td>
+                <td data-label="Experience">1+ year</td>
+                <td data-label="Location" class="table-mob">Delhi</td>
+                <td data-label="Posted On" class="table-mob">2025-09-25</td>
+                <td data-label="Deadline" class="table-mob">2025-10-15</td>
+                <td class="text-danger" data-label="Status">Closed</td>
+                <td data-label="Applicants">5</td>
+                <td data-label="Actions">
+                    <div>
+                        <button class="btn bg-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                        <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Delete</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Title">Customer Support</td>
+                <td data-label="Category">Customer Service</td>
+                <td data-label="Type">Part-time</td>
+                <td data-label="Experience">Fresher</td>
+                <td data-label="Location" class="table-mob">Remote</td>
+                <td data-label="Posted On" class="table-mob">2025-09-12</td>
+                <td data-label="Deadline" class="table-mob">2025-10-30</td>
+                <td class="text-success" data-label="Status">Open</td>
+                <td data-label="Applicants">5</td>
+                <td data-label="Actions">
+                    <div>
+                        <button class="btn bg-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                        <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Delete</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="Title">HR Coordinator</td>
+                <td data-label="Category">Human Resources</td>
+                <td data-label="Type">Full-time</td>
+                <td data-label="Experience">2 years</td>
+                <td data-label="Location" class="table-mob">Delhi</td>
+                <td data-label="Posted On" class="table-mob">2025-08-30</td>
+                <td data-label="Deadline" class="table-mob">2025-10-02</td>
+                <td class="text-danger" data-label="Status">Closed</td>
+                <td data-label="Applicants">5</td>
+                <td data-label="Actions">
+                    <div>
+                        <button class="btn bg-warning"><i class="fa-solid fa-pen"></i> Edit</button>
+                        <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i> Delete</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <nav aria-label="page-navigation" class="d-flex justify-content-center">
+    <ul class="pagination mob-page">
+        <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+        </a>
+        </li>
+        <li class="page-item active">
+        <a class="page-link" href="#" aria-current="page">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+        </a>
+        </li>
+    </ul>
+    </nav>
+
+</body>
+</html>

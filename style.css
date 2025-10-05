@@ -1,32 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-:root {
-    --primary-color: #F8F8F8;
-    --secondary-color: #1E2B38;
-    --third-color: #FFFFF0;
-    --accent-color1: #007BFF;
-    --accent-color2: #28A745;
-    --special-bg1: #AAAAAA;
-    --special-bg2: #FFC107;
-    --text-primary: #333333;
-    --text-secondary: #EBEBEB;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1E1E1E;
 }
 
 /* index section start */
 
-.body-index{
+/* .body-index{
   background-color: #1E1E1E;
-  /* background-color: var(--primary-color); */
-}
+  background-color: var(--primary-color);
+} */
 
 /* navbar section start */
 
-.container-nav {
+.container-nav-index {
   box-shadow: 0 4px 8px rgba(0,0,0,0.6);
   background-color: #1C1C2E;
 }
@@ -47,5 +35,165 @@ body{
 
 /* navbar section end */
 
+/* center section start */
+
+.search-bar input {
+  background: #2A2A3F;
+  border: 1px solid #444;
+  color: #EAEAEA;
+}
+
+.search-bar input::placeholder {
+    color: #999;
+}
+
+/* center section end */
+
+/* category section start */
+
+.category-card{
+  background: #2A2A3F;
+  color: #EAEAEA;
+}
+
+.category-card:hover {
+  transition: 0.5s ease-in-out;
+  transform: translateY(-5px);
+}
+
+/* category section end */
+
+/* company section start */
+
+@media (min-width: 992px) {
+  .company{
+    width: 30%;
+  }
+}
+
+/* company section end */
+
+/* footer section start */
+
+footer {
+  background: #121212;
+  color: #aaa;
+}
+
+/* footer section end */
+
+/* modal section start */
+
+.modal-bg {
+    background: #374151;
+    backdrop-filter: blur(30px);
+}
+
+/* modal section end */
 
 /* index section end */
+
+/* employer profile start */
+
+.em-body{
+  background-color: #f5f7fa;
+}
+
+.container-nav-employer {
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.6); */
+  background-color: #374151;
+}
+
+.contanier-em-bg {
+  background-color: #374151;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+}
+
+.profile-size{
+    width: 9rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.em-footer {
+  background-color: #374151;
+}
+
+@media (max-width: 768px){
+  .pc-page{
+    display: none;
+  }
+}
+
+/* employer profile end */
+
+/* job list start */
+
+table th, table td {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+      background: #374151 !important;
+      color: #fff !important;
+    }
+
+@media (max-width: 768px) {
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+  }
+
+  td {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+   .table-mob{
+    display: none;
+  }
+
+  .filter-mob{
+    display: none;
+  }
+
+  .job-container{
+    padding: 20px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .mob-page{
+    display: none;
+  }
+}
+
+/* job list end */
+
+
+/* browse job start */
+
+.job-card:hover {
+  transition: 0.5s ease-in-out;
+  transform: translateY(-5px);
+}
+
+/* browse job end */
